@@ -7,6 +7,10 @@ import {
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Register from './components/pages/Register'
 import Sidebar from './components/Sidebar'
+import MainLayout from './components/Layout/MainLayout'
+import NavbarLayout from './components/Layout/NavbarLayout'
+import Home from './components/pages/Home'
+import Navbar from './components/Navbar'
 
 function App() {
   
@@ -16,8 +20,14 @@ function App() {
       <div className='w-full h-screen bg-black flex flex-col'>
         <BrowserRouter>
           <Routes>
-            <Route index element={ <Sidebar /> }/>
+            {/* <Route index element={ <Register /> }/> */}
             <Route path='/register' element={ <Register /> }/>
+            <Route element={ <MainLayout /> }>
+              <Route element={ <NavbarLayout /> }>
+                <Route index element={ <Home /> }/>
+                {/* <Route path='/home' element={ <Home /> }/> */}
+              </Route>
+            </Route>
           </Routes> 
         </BrowserRouter>
       </div>

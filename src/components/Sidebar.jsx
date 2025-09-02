@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   return (
     <div className='w-1/6 h-screen border-r-1 border-red-600 flex flex-col items-center justify-between'>
-      <div className='w-full h-17 bg-red-500 relative top-4'></div>
+      <div className='w-full h-17 bg-red-500 relative top-2'></div>
 
       <div className='w-full h-2/8 flex flex-col items-center justify-evenly border-b-2 border-gray-600/30'>
          <div className='w-full h-2 flex items-center'>
@@ -103,14 +103,14 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className='w-10/11 h-15 relative -top-4 flex items-center gap-5 transition-all duration-200 hover:bg-gray-300/30 hover:rounded-xl hover:transition-all hover:duration-200'>
+      <div className='w-10/11 h-13 relative -top-4 flex items-center gap-5 transition-all duration-200 hover:bg-gray-300/30 hover:rounded-xl hover:transition-all hover:duration-200'>
           <div className='w-8 h-8 ml-6'>
             <FiLogOut className='w-full h-full text-gray-300/70' />
           </div>
           <div className='w-4/5 h-2/3 flex items-center'>
             <p className='text-xl text-gray-300/70'>Log Out</p>
           </div>
-          <div></div>
+          {/* <div></div> */}
       </div>
     </div>
   )
