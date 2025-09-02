@@ -6,7 +6,7 @@ const SidebarButton = ({ children, clicked_now, onClick, icon }) => {
 
   return (
     <>
-      <Link to="" className='w-full h-1/5 flex justify-center'>
+      <Link to="" className='w-full h-12 flex justify-center'>
          <button
          onClick={onClick}
          className='w-full h-full flex items-center gap-4 hover:bg-gray-300/20'>
