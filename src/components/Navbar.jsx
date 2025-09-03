@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className='w-10 h-2/5 relative z-10 left-10 flex items-center justify-center'> <FiSearch className='text-xl font-light text-gray-500' /></div>
           <input type="text"
           placeholder='Search anything' 
-          className='border-1 w-6/7 h-4/6 rounded-lg outline-none border-gray-500/50 text-gray-300 pl-10 pr-10 placeholder:font-light'/>
+          className='border-1 w-6/7 h-4/7 rounded-lg outline-none border-gray-500/50 text-gray-300 pl-10 pr-10 placeholder:font-light'/>
           <div className='w-10 h-2/5 relative z-10 -left-10 flex items-center justify-center'> <FiFilter className='text-xl font-light text-gray-400' /></div>
         </div>
       </div>
