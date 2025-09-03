@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaPlay, FaPlus } from 'react-icons/fa'
 
 const Home = () => {
+
+  // useEffect(() => {
+  //   fetch("https://api.themoviedb.org/3/movie/popular?api_key=66c5c73429dd1992339d2172e10cbecc")
+  //     .then(res => res.json())
+  //     .then(data =>)
+  // })
+
   return (
     <div className='w-full h-full'>
       {/* Hero div of the homepage */}
@@ -29,7 +36,14 @@ const Home = () => {
 
             {/* The right div of the hero */}
             <div className='w-1/2 h-full flex place-items-end justify-center'>
-              <div className='w-full h-1/3 bg-fuchsia-500 relative -top-3'></div>
+              <div className='max-w-full h-1/4 bg-fuchsia-500 flex gap-4 overflow-x-auto p-4 scrollbar-hide relative -top-3'>
+                <div className='w-50 h-11/12 rounded-2xl bg-gray-400 relative'></div>
+                <div className='w-50 h-11/12 rounded-2xl bg-gray-400 relative'></div>
+                <div className='w-50 h-11/12 rounded-2xl bg-gray-400 relative'></div>
+                <div className='w-50 h-11/12 rounded-2xl bg-gray-400 relative'></div>
+                <div className='w-50 h-11/12 rounded-2xl bg-gray-400 relative'></div>
+                <div className='w-50 h-11/12 rounded-2xl bg-gray-400 relative'></div>
+              </div>
             </div>
 
           </div>
