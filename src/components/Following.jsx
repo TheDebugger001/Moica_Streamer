@@ -13,7 +13,7 @@ const Following = ({ follower, follower_img }) => {
     <div
     onClick={handleClick} 
     className='w-9/10 h-11 flex items-center justify-evenly relative border-b-1 border-gray-300/5 rounded-lg hover:bg-gray-300/20'>
-      <div className='w-9 h-9 bg-red-700 rounded-full'>
+      <div className='w-9 h-9 bg-fuchsia-700 rounded-full'>
          {/* <img src={ follower_img } alt="" className='w-full h-full object-cover'/> */}
       </div>
       <div className='w-4/6 h-1/2'>
