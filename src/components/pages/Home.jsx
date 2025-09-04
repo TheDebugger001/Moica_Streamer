@@ -14,6 +14,14 @@ const Home = () => {
     <div className="w-5/6 min-h-screen bg-red-500/10 flex flex-col gap-10">
 
       <div className='11/12 h-[80vh] flex items-center justify-center mt-15'>
+        <Swiper
+        modules={[Navigation, Pagination, AutoPlay]}
+        spaceBetween={20}
+        slidesPerView={1}
+        pagination={{clickable: true}}
+        autoplay={{delay: 5000}}
+        loop={true}
+        >
         <div className='w-10/11 h-11/12 rounded-xl overflow-hidden'>
           <div className='w-[75.1vw] h-[73.4vh] absolute z-20 rounded-xl flex bg-black/60'>
 
@@ -53,6 +61,7 @@ const Home = () => {
           </div>
           <img src="../images/MJONIR Warrior.jpeg" alt="" className='w-full h-full object-cover' />
         </div>
+        </Swiper>
 
       </div>
 
