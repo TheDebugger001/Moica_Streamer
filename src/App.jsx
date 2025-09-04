@@ -17,16 +17,13 @@ function App() {
 
   return (
     <>
-      <div className='w-full h-screen bg-black flex flex-col'>
+      <div className='w-full min-h-screen bg-black flex flex-col'>
         <BrowserRouter>
           <Routes>
             {/* <Route index element={ <Register /> }/> */}
             <Route path='/register' element={ <Register /> }/>
             <Route element={ <MainLayout /> }>
-              <Route element={ <NavbarLayout /> }>
                 <Route index element={ <Home /> }/>
-                {/* <Route path='/home' element={ <Home /> }/> */}
-              </Route>
             </Route>
           </Routes> 
         </BrowserRouter>

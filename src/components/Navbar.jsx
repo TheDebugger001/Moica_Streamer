@@ -4,8 +4,8 @@ import UserProfile from './UserProfile'
 
 const Navbar = () => {
   return (
-    <div className='w-full h-24 flex items-center justify-between'>
-      <div className='w-3/7 relative left-15 h-full bg-black flex items-center justify-evenly'>
+    <div className='w-5/6 h-1/9 flex items-center justify-between fixed left-1/6 top-0 z-100'>
+      <div className='w-3/7 relative left-15 h-full flex items-center justify-evenly'>
         <div className='w-1/6 h-2/3 flex items-center justify-evenly'>
           <div className='w-8 h-8 bg-white/30 rounded-full'></div>
           <div className='w-8 h-8 bg-white/30 rounded-full'></div>
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='w-1/9 h-full relative right-8 flex items-center justify-evenly'>
+      <div className='w-1/9 h-full relative -left-10 flex items-center justify-evenly'>
         <div className='w-8 h-8 rounded-full bg-gray-500/50 flex items-center justify-center'> <FiBell className='font-light text-gray-300 text-xl' /> </div>
         <div className='w-8 h-8 rounded-full bg-gray-500/50 flex items-center justify-center'> <FiBell className='font-light text-gray-300 text-xl' /> </div>
         <div className='w-10 h-10 rounded-full overflow-hidden border-1 border-gray-300 bg-red-300'>

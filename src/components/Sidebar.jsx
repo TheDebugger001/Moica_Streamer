@@ -29,7 +29,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className='w-1/6 h-screen border-r-1 border-fuchsia-600 flex flex-col items-center justify-between'>
+    <div className='w-1/6 h-screen border-r-1 fixed top-0 left-0 border-fuchsia-600 flex flex-col items-center justify-between'>
       <div className='w-full h-17 bg-fuchsia-500 relative top-2'></div>
 
       <div className='w-full h-2/8 flex flex-col items-center justify-evenly border-b-2 border-gray-600/30'>
